@@ -1,0 +1,15 @@
+usage: tinymix [options] <command>
+options:
+	-h, --help               : prints this help message and exits
+	-v, --version            : prints this version of tinymix and exits
+	-D, --card NUMBER        : specifies the card number of the mixer
+
+commands:
+	get NAME|ID              : prints the values of a control
+	set NAME|ID VALUE(S) ... : sets the value of a control
+		VALUE(S): integers, percents, and relative values
+			Integers: 0, 100, -100 ...
+			Percents: 0%, 100% ...
+			Relative values: 1+, 1-, 1%+, 2%+ ...
+	controls                 : lists controls of the mixer
+	contents                 : lists controls of the mixer and their contents
